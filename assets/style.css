@@ -1,0 +1,89 @@
+form {
+    font: normal 11px 'Trebuchet MS';
+	width: 216px; position: relative;
+}
+
+/* shadowy background */
+fieldset, legend, fieldset:after, form:after, fieldset:before, form:before {
+}
+
+fieldset {
+	padding: 0px 0px 0px 0px;
+    border:solid 0px;
+}
+
+legend {
+	position: absolute; top: 35px; padding-bottom: 10px; 
+	text-align: center; letter-spacing: 2px; color: #606060; font: bold 24px 'Trebuchet MS';
+	text-transform: uppercase;
+}
+
+legend:before, legend:after {
+	content: '?'; font: normal 15px monospace; padding: 0 10px;
+	position: relative; top: -3px; color: #9a563a;
+}
+
+/* labels & inputs & iný form stuff */
+label, button, select {
+	cursor: pointer;
+    text-align:left;
+}
+
+label[for=message] {
+	padding: 0;
+    text-align:left;
+}
+
+label {
+	display: block; height: 15px; line-height: 22px;
+	padding: 10px 0; text-transform: uppercase;
+	font-weight: bold; letter-spacing: 2px;
+}
+
+label input, textarea {
+	font: normal 12px/12px 'Arial'; color: #333; outline: none;
+	border: solid #b5b4b4 1px; background: #ecebeb;
+    padding-left:3px;
+}
+
+label input {
+	width: 216px;
+    height:20px;
+}
+
+/* 'choose a thing' select a textarea */
+select {
+	width: 216px;
+}
+
+.chzn-container {
+	font-size: 11px; margin: 30px auto; margin-left: 88px; text-transform: none;
+}
+
+.chzn-single {
+	text-shadow: 1px 1px 0 #fff;
+}
+
+textarea {
+    margin-top:5px;
+	width: 216px; height: 117px; line-height: 15px;
+	resize: none; overflow: hidden;
+}
+
+/* button a biely border okolo neho */
+button {
+	display: block;	margin: 10px 0 15px; padding: 0; width: 90px; height: 30px;
+	font: normal 13px/13px 'Trebuchet MS'; color: #606060;
+	background: #ecebeb; border: 1px solid #c1c0c0; position: relative; z-index: 2;
+	padding-right: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px #cacaca;
+	-moz-box-shadow: 0 0 10px #cacaca;
+	box-shadow: 0 0 10px #cacaca;  
+}
+
+button:hover {
+	background: #e2e2e2;
+}
